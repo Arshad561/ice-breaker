@@ -19,9 +19,9 @@ def scrape_linkedin_profile(linkedin_profile_url: str, mock: bool = True):
         }
         response = requests.get(
             api_endpoint,
-            params = params,
-            headers = headers,
-            timeout = 10,
+            params=params,
+            headers=headers,
+            timeout=10,
         )
 
     data = response.json()
@@ -43,7 +43,7 @@ def scrape_linkedin_profile(linkedin_profile_url: str, mock: bool = True):
 if __name__ == "__main__":
     print(
         scrape_linkedin_profile(
-            linkedin_profile_url = "https://www.linkedin.com/in/arshad-basha-shaik-2085a0129/",
-            mock = True,
+            linkedin_profile_url="https://www.linkedin.com/in/arshad-basha-shaik-2085a0129/",
+            mock=True,
         )
     )
